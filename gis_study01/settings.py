@@ -33,7 +33,7 @@ while True:
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hffy$3#m1!cil-ch7x3jr_v*lb0txf#t_%s1($d*af!o65tnpl'
+SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'acountapp'
+    'acountapp',
 ]
 
 MIDDLEWARE = [
