@@ -44,8 +44,8 @@ class AccountDetailView(DetailView):
     template_name = 'accountapp/detail.html'
 
 
-@method_decorator(login_required, 'get')
-@method_decorator(login_required, 'post')
+@method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'get')
+@method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'post')
 class AccountUpdateView(UpdateView):
     model = User
     form_class = AccountCreationForm
@@ -54,11 +54,10 @@ class AccountUpdateView(UpdateView):
     template_name = 'accountapp/update.html'
 
 
-@method_decorator(login_required, 'get')
-@method_decorator(login_required, 'post')
+@method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'get')
+@method_decorator(login_required(login_url=reverse_lazy('accountapp:login')), 'post')
 class AccountDeleteView(DeleteView):
     model = User
     context_object_name = 'target_user'
     success_url = reverse_lazy('accountapp:hello_world')
     template_name = 'accountapp/delete.html'
-    
