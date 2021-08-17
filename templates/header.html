@@ -1,14 +1,22 @@
-<div style="text-align: center">
-    <div class="pragmaic_header_logo">
+<div style="text-align: center;">
+    <div class="pragmatic_header_logo">
         <h1>Pragmatic</h1>
     </div>
-    <div class="pragmaic_header_butten">
-        <span>nav1</span>
-        <span>nav2</span>
+    <div class="pragmatic_header_button">
+        <span>
+            <a href="{% url 'articleapp:list' %}">
+                Articles
+            </a>
+        </span>
+        <span>
+            <a href="{% url 'projectapp:list' %}">
+                Projects
+            </a>
+        </span>
         {% if not user.is_authenticated %}
         <span>
             <a href="{% url 'accountapp:login' %}">
-                login
+                Login
             </a>
         </span>
         <span>
