@@ -84,3 +84,5 @@ __pycache__/
 media/
 
 staticfiles/
+
+kkh_gis.pem
