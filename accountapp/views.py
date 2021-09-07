@@ -10,9 +10,9 @@ from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 from django.views.generic.list import MultipleObjectMixin
 
-from acountapp.decorators import account_ownership_required
-from acountapp.forms import AccountCreationForm
-from acountapp.models import HelloWorld
+from accountapp.decorators import account_ownership_required
+from accountapp.forms import AccountCreationForm
+from accountapp.models import HelloWorld
 from articleapp.models import Article
 
 

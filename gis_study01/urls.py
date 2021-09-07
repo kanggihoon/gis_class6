@@ -24,7 +24,7 @@ urlpatterns = [
     path('', ArticleListView.as_view(), name='home'),
 
     path('admin/', admin.site.urls),
-    path('acounts/', include('acountapp.urls')),
+    path('accounts/', include('accountapp.urls')),
     path('profiles/', include('profileapp.urls')),
     path('articles/', include('articleapp.urls')),
     path('comments/', include('commentapp.urls')),
